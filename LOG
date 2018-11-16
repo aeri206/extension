@@ -1,0 +1,7 @@
+1. initialized manifest.json
+2. add background.js and typed it in manifest.json
+	# non-persistent background script를 가질 것이며,  registered file for important events it needs to listen for을 scan할 것임을 알 수 있다.
+	# extension은 설치됨과 동시에 persistent value를 필요로한다.
+	# background script에, runtime.onInstalled를 위한 event를 listening하는 것부터 시작하자．
+	# onInstalled listener 내부에서, extension은 storage API에서 사용되는 string을 set할것이다. 이는 복수의 extension component가 해당 value (onInstalled listener에서 set하는)에 접근하고 update 가능함을 말해준다.
+
